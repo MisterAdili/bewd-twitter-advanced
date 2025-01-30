@@ -5,8 +5,8 @@ json.tweets do
     json.message tweet.message
     if tweet.image.attached?
       json.image url_for(tweet.image)
-    else
-      json.image nil
+    #else
+    #  json.image nil
     end
   end
 end
