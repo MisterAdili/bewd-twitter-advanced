@@ -53,6 +53,9 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # Don't overwrite Rspec files in generators
+
+  config.active_storage.service = :amazon
+
   config.generators do |g|
     g.test_framework nil
   end
